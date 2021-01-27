@@ -1,0 +1,36 @@
+.col-2 {
+  column-count: 2;
+  column-gap: 0.5rem;
+  break-inside: avoid;
+}
+
+.col-item {
+  break-inside: avoid;
+}
+
+.vh-70 {
+  height: 70vh;
+}
+
+.w-46 {
+  width: 46%;
+}
+
+.project-item {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+
+  position: relative;
+  bottom: 3rem;
+  opacity: 0;
+  animation: 0.5s swift-down ease-out forwards, 0.5s fade-in ease-out forwards;
+  animation-delay: calc(var(--i) * 0.25s);
+}
+
+@keyframes swift-down {
+  to {
+    bottom: 0;
+  }
+}

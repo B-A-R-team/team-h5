@@ -1,0 +1,63 @@
+i {
+  font-style: normal;
+}
+
+.swift-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+  top: 0.8rem;
+  animation: 0.3s swift-up ease-in-out forwards;
+  animation-delay: calc(var(--i) * 0.1s);
+}
+.swift-item {
+  position: relative;
+  top: 2em;
+  animation: 0.5s swift-up ease-in-out forwards;
+  animation-delay: calc(var(--i) * 0.1s);
+}
+
+.fade-item {
+  position: relative;
+  top: 2rem;
+  opacity: 0;
+  animation: 0.5s swift-up ease-out forwards, 0.5s fade-in ease-out forwards;
+  animation-delay: calc(var(--i) * 0.2s + 0.4s);
+}
+
+.fade-item-l {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+
+  position: relative;
+  left: 4rem;
+  opacity: 0;
+  animation: 0.5s swift-left ease-out forwards, 0.5s fade-in ease-out forwards;
+  animation-delay: 0.4s;
+}
+
+.fade-item-d {
+  position: relative;
+  bottom: 4rem;
+  opacity: 0;
+  animation: 0.5s swift-bottom ease-out forwards, 0.5s fade-in ease-out forwards;
+  animation-delay: 0.4s;
+}
+
+@keyframes swift-up {
+  to {
+    top: 0rem;
+  }
+}
+@keyframes swift-left {
+  to {
+    left: 0rem;
+  }
+}
+@keyframes swift-bottom {
+  to {
+    bottom: 0rem;
+  }
+}

@@ -1,0 +1,75 @@
+<svg
+  xml:space="preserve"
+  viewBox="0 0 100 100"
+  y="0"
+  x="0"
+  xmlns="http://www.w3.org/2000/svg"
+  id="Layer_1"
+  version="1.1"
+  style="height: 100%; width: 100%; background: transparent"
+  width="47px"
+  height="47px"
+>
+  <g
+    class="ldl-scale"
+    style="transform-origin: 50% 50%; transform: rotate(0deg) scale(0.8, 0.8)"
+  >
+    <g class="ldl-ani">
+      <g class="ldl-layer">
+        <g
+          class="ldl-ani"
+          style="
+            transform: scale(0.91);
+            transform-origin: 50px 50px;
+            animation: 1.11111s linear -0.740741s infinite normal forwards running
+              breath-0767aaa8-e563-486c-b165-4d9d0e7a3c76;
+          "
+        >
+          <ellipse
+            fill="#323232"
+            ry="16.428"
+            rx="19.343"
+            cy="75.645"
+            cx="40.307"
+            transform="rotate(-21.283 40.302 75.636)"
+            style="fill: rgb(240, 240, 240)"
+          ></ellipse>
+        </g>
+      </g>
+      <g class="ldl-layer">
+        <g
+          class="ldl-ani"
+          style="
+            transform: scale(0.91);
+            transform-origin: 50px 50px;
+            animation: 1.11111s linear -0.925926s infinite normal forwards running
+              breath-0767aaa8-e563-486c-b165-4d9d0e7a3c76;
+          "
+        >
+          <path
+            d="M48.779 7.51h10.256v63.554H48.779z"
+            fill="#323232"
+            style="fill: rgb(240, 240, 240)"
+          ></path>
+        </g>
+      </g>
+      <g class="ldl-layer">
+        <g
+          class="ldl-ani"
+          style="
+            transform: scale(0.91);
+            transform-origin: 50px 50px;
+            animation: 1.11111s linear -1.11111s infinite normal forwards running
+              breath-0767aaa8-e563-486c-b165-4d9d0e7a3c76;
+          "
+        >
+          <path
+            fill="#323232"
+            d="M60.593 7.49c-.201 1.579-.01 3.419.576 5.297.58 1.888 1.512 3.724 2.783 5.647 1.26 1.915 2.834 3.879 4.436 6.038a93.375 93.375 0 0 1 4.478 6.631c1.373 2.274 2.713 4.502 3.888 7.107 1.164 2.559 1.909 5.535 1.926 8.364a21.478 21.478 0 0 1-1.466 8.18c-.999 2.555-2.57 4.956-4.789 6.613l-.966-1.126c1.622-1.737 2.588-3.994 3.047-6.308a17.97 17.97 0 0 0 .018-6.959c-.437-2.261-1.329-4.23-2.627-6.138-1.277-1.876-2.929-3.802-4.555-5.653a85.697 85.697 0 0 0-5.124-5.289c-1.766-1.675-3.738-3.39-5.693-5.441-3.916-4.085-7.16-9.854-7.747-16.943l11.815-.02z"
+            style="fill: rgb(240, 240, 240)"
+          ></path>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
