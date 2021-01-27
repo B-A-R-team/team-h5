@@ -128,6 +128,7 @@ export default function FullPage() {
               title="团队作品"
             >
               <Projects />
+              <div className="w-10 h-20"></div>
             </Item>
             <Item
               fullpageApi={fullpageApi}
@@ -154,7 +155,7 @@ export default function FullPage() {
                     alt="二维码"
                   />
                   <div className="ml-5">
-                    <p>扫码二维码</p>
+                    <p>扫描二维码</p>
                     <p>即刻加入纳新群</p>
                   </div>
                 </span>

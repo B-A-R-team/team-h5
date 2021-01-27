@@ -14,7 +14,7 @@ export default function Item({
   return (
     <div className={`section relative text-white ${bgc}`}>
       <div
-        className={`h-full flex flex-col py-6 items-center ${
+        className={`h-full flex flex-col py-6 justify-around items-center ${
           isBetween ? 'justify-between' : ''
         }`}
       >
