@@ -36,6 +36,7 @@ i {
   opacity: 0;
   animation: 0.5s swift-left ease-out forwards, 0.5s fade-in ease-out forwards;
   animation-delay: 0.4s;
+  animation-delay: calc(var(--i) * 0.2s + 0.4s);
 }
 
 .fade-item-d {
@@ -44,6 +45,13 @@ i {
   opacity: 0;
   animation: 0.5s swift-bottom ease-out forwards, 0.5s fade-in ease-out forwards;
   animation-delay: 0.4s;
+}
+
+.scale-in {
+  transform: scale(3);
+  opacity: 0;
+  animation: 0.5s scale-in cubic-bezier(0.18, 0.89, 0.32, 1.28) forwards,
+    0.5s fade-in ease-out forwards;
 }
 
 @keyframes swift-up {
@@ -59,5 +67,11 @@ i {
 @keyframes swift-bottom {
   to {
     bottom: 0rem;
+  }
+}
+
+@keyframes scale-in {
+  to {
+    transform: scale(1);
   }
 }

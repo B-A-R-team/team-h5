@@ -12,5 +12,5 @@ export default function Skills() {
     initChart();
   }, []);
 
-  return <div className="bg-white rounded-lg" id="chart" style={{ width: 300, height: 300 }} />;
+  return <div className="bg-white rounded-lg" id="chart" style={{ width: 300, height: 280 }} />;
 }

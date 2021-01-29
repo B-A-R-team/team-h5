@@ -19,12 +19,12 @@ function App() {
   return (
     <div className="relative">
       <span
-        className="absolute z-50  top-0 right-0 w-7 mt-4 mr-4 border-2 border-gray1 rounded-full"
+        className="absolute z-50  top-0 right-0 w-7 mt-4 mr-4 border-2 border-gray1 rounded-full bg-black bg-opacity-25"
         onClick={() => {
           setMusicOpen((value) => !value);
         }}
       >
-        <MusicIcon className={musicOpen ? 'animate-spin' : ''} />
+        <MusicIcon className={`${musicOpen ? 'animate-spin' : ''}`} />
         <audio id="ready" src={ready} />
       </span>
       <FullPage />

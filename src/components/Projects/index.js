@@ -4,17 +4,12 @@ import ehotel from '../../assets/image/ehotel.png';
 import exam from '../../assets/image/examsys.png';
 import police from '../../assets/image/police.png';
 import print from '../../assets/image/print.png';
-import signin from '../../assets/image/signin.png';
 import './index.css';
 
 const projectList = [
   {
     img: ehotel,
     label: '电竞酒店管理平台',
-  },
-  {
-    img: signin,
-    label: '校园卡打卡软件',
   },
   {
     img: exam,
@@ -36,17 +31,23 @@ const projectList = [
 
 export default function Projects() {
   return (
-    <div className="vh-70 flex flex-col flex-wrap text-xs items-center px-2">
-      {projectList.map((item, index) => (
-        <div
-          className="w-46 mb-3 rounded-sm shadow-md bg-white text-black text-center project-item"
-          key={index}
-          style={{ '--i': index }}
-        >
-          <img className="w-full rounded-sm" src={item.img} alt={item.label} />
-          <p className="inline-block mt-1">{item.label}</p>
-        </div>
-      ))}
+    <div className="project-list">
+      {/* <div style={{ width: '1000%', height: '100%' }}> */}
+        {projectList.map((item, index) => (
+          <div
+            className="rounded-sm shadow-md border bg-white text-black text-center project-item"
+            key={index}
+            style={{ '--i': index }}
+          >
+            <img
+              className="w-full rounded-sm"
+              src={item.img}
+              alt={item.label}
+            />
+            <p className="inline-block mt-1">{item.label}</p>
+          </div>
+        ))}
+      {/* </div> */}
     </div>
   );
 }
