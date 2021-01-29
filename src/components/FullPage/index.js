@@ -1,15 +1,9 @@
 import React, { useState } from 'react';
 import ReactFullpage from '@fullpage/react-fullpage';
 import Item from '../Item';
-import logo from '../../assets/image/teamlogo.jpg';
-import codeIcon from '../../assets/image/code.webp';
-import city from '../../assets/image/city.png';
-import qrcode from '../../assets/image/qrcode.png';
-import coding from '../../assets/image/coding.jpg';
 import Skills from '../Skills';
 import './index.css';
 import Projects from '../Projects';
-import teamactive from '../../assets/image/teamactive.jpg';
 
 export default function FullPage() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -26,11 +20,13 @@ export default function FullPage() {
               bgc="bg-blue-400"
               isBetween
               isActive={activeIndex === 0}
-              style={{ background: `url(${city}) bottom no-repeat #41b4e0` }}
+              style={{
+                background: `url(https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/citybg.png) bottom no-repeat #41b4e0`,
+              }}
             >
               <img
                 className="w-32 rounded shadow-lg scale-in mt-6"
-                src={logo}
+                src="https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/teamlogo.jpg"
                 alt="logo"
               />
               <div className="flex flex-col items-center mb-6 font-xyb text-white">
@@ -71,7 +67,7 @@ export default function FullPage() {
                 <span className="flex items-center">
                   <img
                     className="w-20 rounded shadow"
-                    src={qrcode}
+                    src="https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/20210130qrcode.png"
                     alt="二维码"
                   />
                   <div className="ml-2">
@@ -87,7 +83,8 @@ export default function FullPage() {
               bgc="bg-white"
               title="关于我们"
               image={{
-                src: teamactive,
+                src:
+                  'https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/teamactive.jpg',
                 alt: '团队',
               }}
             >
@@ -119,7 +116,8 @@ export default function FullPage() {
               bgc="bg-white"
               title="团队作品"
               image={{
-                src: codeIcon,
+                src:
+                  'https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/code.webp',
                 alt: '图标',
               }}
             >
@@ -130,14 +128,18 @@ export default function FullPage() {
               fullpageApi={fullpageApi}
               isActive={activeIndex === 3}
               image={{
-                src: coding,
+                src:
+                  'https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/coding.jpg',
                 alt: 'coding',
               }}
               bgc="bg-white"
               title="加入我们，你能得到什么"
               isLast
             >
-              <span className="inline-block fade-item-l shadow-md rounded-lg" style={{ '--i': 1 }}>
+              <span
+                className="inline-block fade-item-l shadow-md rounded-lg"
+                style={{ '--i': 1 }}
+              >
                 <Skills />
               </span>
 
@@ -145,7 +147,7 @@ export default function FullPage() {
                 <span className="flex items-center">
                   <img
                     className="w-20 rounded shadow"
-                    src={qrcode}
+                    src="https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/20210130qrcode.png"
                     alt="二维码"
                   />
                   <div className="ml-5">

@@ -16,6 +16,29 @@ function App() {
     }
   }, [musicOpen]);
 
+  useEffect(() => {
+    const pictures = [
+      'https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/citybg.png',
+      'https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/teamlogo.jpg',
+      'https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/20210130qrcode.png',
+      'https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/teamactive.jpg',
+      'https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/code.webp',
+      'https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/coding.jpg',
+      'https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/20210130qrcode.png',
+      'https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/ehotel.png',
+      'https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/examsys.png',
+      'https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/police.png',
+      'https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/print.png',
+      'https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/bar-ui.png',
+    ];
+    window.img = new Array(pictures.length);
+    pictures.forEach((picture, index) => {
+      const img = new Image();
+      img.src = picture.fileName;
+      window.img[index] = img;
+    });
+  }, []);
+
   return (
     <div className="relative">
       <span
