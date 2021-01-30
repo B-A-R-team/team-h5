@@ -1,0 +1,54 @@
+<svg
+  xml:space="preserve"
+  viewBox="0 0 100 100"
+  y="0"
+  x="0"
+  xmlns="http://www.w3.org/2000/svg"
+  id="Layer_1"
+  version="1.1"
+  style="height: 100%; width: 100%; background: transparent"
+  width="47px"
+  height="47px"
+>
+  <g
+    class="ldl-scale"
+    style="transform-origin: 50% 50%; transform: rotate(90deg) scale(0.8, 0.8);"
+  >
+    <g class="ldl-ani">
+      <g class="ldl-layer">
+        <g
+          class="ldl-ani"
+          style="
+            transform-origin: 50px 50px;
+            transform: scale(0.91);
+            animation: 1.11111s linear -0.833333s infinite normal forwards running
+              breath;
+          "
+        >
+          <path
+            d="M74.07 50c0 .53-.213 1.061-.638 1.451L47.59 84.612v5.916c0 1.713 2.036 2.608 3.298 1.451l33.877-40.528c.425-.39.638-.92.638-1.451 0-.53-.213-1.061-.638-1.451L50.888 8.021c-1.262-1.157-3.298-.262-3.298 1.451v5.916l25.842 33.161c.425.39.638.921.638 1.451z"
+            id="XMLID_854_"
+            style="fill: rgba(255, 255, 255, 0.541)"
+          ></path>
+        </g>
+      </g>
+      <g class="ldl-layer">
+        <g
+          class="ldl-ani"
+          style="
+            transform-origin: 50px 50px;
+            transform: scale(0.91);
+            animation: 1.11111s linear -1.11111s infinite normal forwards running
+              breath;
+          "
+        >
+          <path
+            d="M41.077 50c0 .53-.213 1.061-.638 1.451L14.597 84.612v5.916c0 1.713 2.036 2.608 3.298 1.451l33.877-40.528c.425-.39.638-.92.638-1.451 0-.53-.213-1.061-.638-1.451L17.895 8.021c-1.262-1.157-3.298-.262-3.298 1.451v5.916l25.842 33.161c.425.39.638.921.638 1.451z"
+            id="XMLID_853_"
+            style="fill: rgba(255, 255, 255, 0.281)"
+          ></path>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
