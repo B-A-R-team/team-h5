@@ -8,7 +8,7 @@ module.exports = {
     configure: (webpackConfig) => {
       webpackConfig.output = {
         ...webpackConfig.output,
-        publicPath: '/team-h5',
+        publicPath: 'https://cdn.jsdelivr.net/gh/b-a-r-team/team-h5@gh-pages',
       };
       return webpackConfig;
     },
