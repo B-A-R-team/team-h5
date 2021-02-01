@@ -51,6 +51,7 @@ function App() {
         <audio id="ready" src={ready} />
       </span>
       <FullPage />
+      {/* <Projects /> */}
     </div>
   );
 }

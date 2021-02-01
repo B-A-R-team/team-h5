@@ -4,6 +4,7 @@ import Item from '../Item';
 import Skills from '../Skills';
 import './index.css';
 import Projects from '../Projects';
+import Target from '../Target';
 
 export default function FullPage() {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -89,22 +90,23 @@ export default function FullPage() {
               }}
             >
               <div className="fade-item-d mx-4 font-light border-2 border-dashed p-4 rounded-lg border-gray-300">
+                <p className="mb-4 swift-wrapper flex justify-center">
+                  <img
+                    className="swift-item"
+                    style={{ height: 220, '--i': 1 }}
+                    src="https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/ldq.png"
+                    alt="ldq"
+                  />
+                </p>
                 <p className="mb-4 swift-wrapper">
                   <i className="swift-item" style={{ '--i': 2 }}>
                     BAR团队，由软件学院.net方向和前端方向负责人李东琦老师于2016年创建。
                   </i>
                 </p>
-                <p className="mb-4 swift-wrapper">
+                <p className="swift-wrapper">
                   <i className="swift-item" style={{ '--i': 4 }}>
                     BAR为Breaking All
                     Restriction的简写，中文译为“打破所有的限制”，这既是我们团队的名称，也是我们团队的主导思想。
-                  </i>
-                </p>
-                <p className="swift-wrapper">
-                  <i className="swift-item" style={{ '--i': 6 }}>
-                    团队的主要目标是帮助同学们更好的学习，能够提供
-                    给同学们更多的学习资源，让同学们学到在平时课堂上学不到的东西，也可以提高学生的动手操作能力，获得更多的实战经验，能够
-                    为以后的学习，工作打下良好的基础。
                   </i>
                 </p>
               </div>
@@ -112,6 +114,20 @@ export default function FullPage() {
             <Item
               fullpageApi={fullpageApi}
               isActive={activeIndex === 2}
+              // bgc="bg-purple-400"
+              bgc="bg-white"
+              title="团队目标"
+              image={{
+                src:
+                  'https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/target.webp',
+                alt: '目标',
+              }}
+            >
+              <Target />
+            </Item>
+            <Item
+              fullpageApi={fullpageApi}
+              isActive={activeIndex === 3}
               // bgc="bg-teal-400"
               bgc="bg-white"
               title="团队作品"
@@ -121,12 +137,16 @@ export default function FullPage() {
                 alt: '图标',
               }}
             >
-              <Projects />
-              {/* <div className="w-10 h-20"></div> */}
+              <div className="w-screen fade-item" style={{ '--i': 1 }}>
+                <Projects />
+                <div className="mt-8 mx-4 p-2 rounded border-2 border-dashed">
+                  以上的团队作品涵盖了前端和后端的各项技术，例如：.net、nodejs、vue、react、微信小程序等
+                </div>
+              </div>
             </Item>
             <Item
               fullpageApi={fullpageApi}
-              isActive={activeIndex === 3}
+              isActive={activeIndex === 4}
               image={{
                 src:
                   'https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/coding.jpg',
@@ -143,7 +163,7 @@ export default function FullPage() {
                 <Skills />
               </span>
 
-              <div className="flex items-center justify-center font-xyb fade-item-d rounded shadow py-2 mx-8 mt-4 bg-black bg-opacity-25 text-white">
+              <div className="flex items-center justify-center font-xyb fade-item-d rounded shadow py-2 mx-8 mt-4 bg-black bg-opacity-25 text-white px-4">
                 <span className="flex items-center">
                   <img
                     className="w-20 rounded shadow"

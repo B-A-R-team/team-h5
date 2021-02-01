@@ -15,6 +15,7 @@
     "react-chrono": "^1.9.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.1",
+    "swiper": "^6.4.10",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "web-vitals": "^0.2.4"
   },

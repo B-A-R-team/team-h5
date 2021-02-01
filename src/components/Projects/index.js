@@ -1,5 +1,19 @@
 import React from 'react';
 import './index.css';
+import SwiperCore, {
+  Navigation,
+  Pagination,
+  Scrollbar,
+  A11y,
+  Autoplay,
+} from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper.min.css';
+import 'swiper/components/navigation/navigation.min.css';
+import 'swiper/components/pagination/pagination.min.css';
+import 'swiper/components/scrollbar/scrollbar.min.css';
+
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
 const projectList = [
   {
@@ -26,19 +40,21 @@ const projectList = [
 
 export default function Projects() {
   return (
-    <div className="project-list">
-      {/* <div style={{ width: '1000%', height: '100%' }}> */}
+    <Swiper pagination={{ clickable: true }} autoplay={{ delay: 1500 }} loop>
       {projectList.map((item, index) => (
-        <div
-          className="rounded-sm shadow-md border bg-white text-black text-center project-item"
+        <SwiperSlide
+          className="rounded-sm shadow-md border bg-white text-black text-center"
           key={index}
-          style={{ '--i': index }}
         >
-          <img className="w-full rounded-sm" src={item.img} alt={item.label} />
-          <p className="inline-block mt-1">{item.label}</p>
-        </div>
+          <img
+            style={{ height: 190 }}
+            className=" rounded-sm"
+            src={item.img}
+            alt={item.label}
+          />
+          <p className="inline-block mt-1 mb-8">{item.label}</p>
+        </SwiperSlide>
       ))}
-      {/* </div> */}
-    </div>
+    </Swiper>
   );
 }
