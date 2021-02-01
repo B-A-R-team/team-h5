@@ -34,7 +34,7 @@ function App() {
     window.img = new Array(pictures.length);
     pictures.forEach((picture, index) => {
       const img = new Image();
-      img.src = picture.fileName;
+      img.src = picture;
       window.img[index] = img;
     });
   }, []);
