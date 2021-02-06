@@ -14,7 +14,7 @@ export default function Target() {
     <div
       className="bg-white rounded-lg"
       id="chart"
-      style={{ width: 300, height: 280 }}
+      style={{ width: 300, height: 400 }}
     />
   );
 }

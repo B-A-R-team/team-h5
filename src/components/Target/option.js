@@ -1,10 +1,10 @@
 const nodes = [
-  { id: 0, name: '为学生提供', symbolSize: 50 },
-  { id: 1, name: '更多学习资料', symbolSize: 50 },
-  { id: 2, name: '老师的引导', symbolSize: 50 },
-  { id: 3, name: '团队知识分享', symbolSize: 50 },
-  { id: 4, name: '更好的学习环境', symbolSize: 50 },
-  { id: 5, name: '更多的实战经验', symbolSize: 50 },
+  { id: 0, name: '就业', symbolSize: 80 },
+  { id: 1, name: '编码基本功', symbolSize: 100 },
+  { id: 2, name: '项目实战', symbolSize: 100 },
+  { id: 3, name: '知识分享', symbolSize: 100 },
+  { id: 4, name: '学习氛围', symbolSize: 100 },
+  { id: 5, name: '路线指引', symbolSize: 100 },
 ];
 
 const edges = [
@@ -23,7 +23,7 @@ const option = {
     type: 'graph',
     layout: 'force',
     force: {
-      repulsion: 200,
+      repulsion: 300,
       edgeLength: 100,
     },
     label: { show: true },

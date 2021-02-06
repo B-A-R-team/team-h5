@@ -68,7 +68,7 @@ export default function FullPage() {
                 <span className="flex items-center">
                   <img
                     className="w-20 rounded shadow"
-                    src="https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/20210130qrcode.png"
+                    src="https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/20200206qrweixinlogo.png"
                     alt="二维码"
                   />
                   <div className="ml-2">
@@ -167,12 +167,12 @@ export default function FullPage() {
                 <span className="flex items-center">
                   <img
                     className="w-20 rounded shadow"
-                    src="https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/20210130qrcode.png"
+                    src="https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/20200206qrweixinlogo.png"
                     alt="二维码"
                   />
                   <div className="ml-5">
                     <p>扫描二维码</p>
-                    <p>即刻加入纳新群</p>
+                    <p>加入纳新微信群</p>
                   </div>
                 </span>
               </div>

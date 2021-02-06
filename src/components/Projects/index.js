@@ -17,7 +17,12 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 
 const projectList = [
   {
-    img: 'https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/ehotel.png',
+    img:
+      'https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/20210206ehotelminapp.png',
+    label: '电竞酒店小程序',
+  },
+  {
+    img: 'https://cdn.jsdelivr.net/gh/Tuzilow/blog-image/img/20210206ehotelcharts.png',
     label: '电竞酒店管理平台',
   },
   {
@@ -47,7 +52,7 @@ export default function Projects() {
           key={index}
         >
           <img
-            style={{ height: 190 }}
+            style={{ height: 190, margin: 'auto' }}
             className=" rounded-sm"
             src={item.img}
             alt={item.label}

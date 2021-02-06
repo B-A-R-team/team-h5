@@ -3,8 +3,8 @@ import './index.css';
 
 export default function Skills() {
   const skills = [
-    { id: 0, name: 'vue', bgc: '#fc8181', bc: '#e53e3e' },
-    { id: 1, name: 'react', bgc: '#f6ad55', bc: '#dd6b20' },
+    { id: 0, name: 'h5', bgc: '#fc8181', bc: '#e53e3e' },
+    { id: 1, name: 'vue', bgc: '#f6ad55', bc: '#dd6b20' },
     { id: 2, name: 'electron', bgc: '#f687b3', bc: '#d53f8c' },
     { id: 3, name: 'nodejs', bgc: '#68d391', bc: '#38a169' },
     { id: 4, name: 'git', bgc: '#4fd1c5', bc: '#319795' },
@@ -12,7 +12,7 @@ export default function Skills() {
     { id: 6, name: 'javascript', bgc: '#7f9cf5', bc: '#5a67d8' },
     { id: 7, name: 'h5', bgc: '#b794f4', bc: '#805ad5' },
     { id: 8, name: '.net', bgc: '#f687b3', bc: '#d53f8c' },
-    { id: 9, name: 'github', bgc: '#68d391', bc: '#38a169' },
+    { id: 9, name: 'react', bgc: '#68d391', bc: '#38a169' },
     { id: 10, name: 'css', bgc: '#fc8181', bc: '#e53e3e' },
   ];
 
